@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f1ea;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #e5dfd3;
+    position: sticky;
+    top: 0;
+}
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* [特效] 滑鼠移到導覽列連結時放大並改變顏色— 使用 transition + transform:scale */
+nav a:hover {
+    color: #d27979;
+    transform: scale(1.1);
+    display: inline-block;
+    transition: 0.3s;
+}
+
+section {
+    scroll-margin-top: 90px;
+    margin: 40px auto;
+    padding: 30px;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#about {
+    display: flex;
+    align-items: center;
+}
+.about-left {
+    text-align: center;
+    flex: 1;
+}
+.photo-jpg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.about-right {
+    flex: 2;
+    padding-left: 30px;
+}
+
+.skill-1 {
+    margin-bottom: 15px;
+}
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 15px;
+    margin-top: 5px;
+}
+.progress {
+    background-color: #8c8c8c;
+    height: 100%;
+    border-radius: 10px;
+}
+/* [動畫] 進度條*/
+.skill-2{ 
+    animation: ya 2s ease-out;
+    width: 67%; 
+}
+
+@keyframes ya { 
+    from { 
+        width: 0%; 
+    } 
+    to { 
+        width: 67%;
+    }
+}
+.skill-3{ 
+    animation: yaa 2s ease-out; 
+    width: 60%;
+}
+
+@keyframes yaa { 
+    from { 
+        width: 0%; 
+    } 
+    to { 
+        width: 60%;
+    }
+}
+.skill-4{ 
+    animation: yae 2s ease-out; 
+}
+
+@keyframes yae { 
+    from { 
+        width: 0%; 
+    } 
+    to { 
+        width: 75%;
+    }
+}
+.skill-5{ 
+    animation: yaee 2s ease-out; 
+}
+
+@keyframes yaee { 
+    from { 
+        width: 0%; 
+    } 
+    to { 
+        width: 85%;
+    }
+}
+.skill-6{ 
+    animation: yaw 2s ease-out; 
+}
+
+@keyframes yaw { 
+    from { 
+        width: 0%; 
+    } 
+    to { 
+        width: 67%;
+    }
+}
+
+#experience > div {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    gap: 20px !important;
+    align-items: flex-start !important;
+}
+
+
+.experience-item {
+    flex: 1 !important;
+    width: auto !important; 
+}
+
+.experience-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.experience-item {
+    width: 100% !important;
+}
+
+.exp-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.exp-item {
+    flex: 1;
+    text-align: left;
+}
+.exp-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.back-to-top {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #888;
+}
+.aside {
+    position: absolute ;
+    bottom: 20px ;
+    right: 20px ;
+    z-index: 10;
+}
+
+.aside img {
+    width: 35px ; 
+    height: 35px ;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+/* 碰到的時候會微微放大和傾斜— 使用transform:scale  */
+.aside img:hover {
+    transform: scale(1.15) rotate(5deg); 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
